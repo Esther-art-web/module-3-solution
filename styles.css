@@ -1,0 +1,77 @@
+h1{
+    margin: 20px auto 50px ;
+}
+.collapsed{
+    visibility: hidden;
+    width: 35px;
+    height: 20px;
+
+}
+#bs-example-navbar-collapse-1 .navbar-nav li a,button.navbar-toggle{
+    visibility: hidden;
+} 
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 20px;
+    height: 1px;
+    background-color: #cccccc;
+    border-radius: 1px;
+    margin-bottom: 2px;
+}
+#nav{
+    border: 1px solid gray;
+}
+.container .row .food p{
+    background-color: aliceblue;
+    
+}
+.container .row .food p{
+    padding: 10px 20px;
+}
+
+
+.food{
+    text-align: center;
+}
+#end{
+    background-color: aliceblue;
+    visibility: hidden;
+}
+
+@media only screen and (max-width:767px){
+    h1{
+        font-size: 24px;
+    }
+    #end{
+        visibility: visible;
+    }
+    .navbar-header .collapsed{
+        visibility: visible;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        border-radius:5px ;
+    }
+    #bs-example-navbar-collapse-1{
+        visibility: visible;
+    }
+    #nav{
+        position: relative;
+    }
+    #bs-example-navbar-collapse-1 .navbar-nav li a{
+        visibility: visible;
+        display: block;
+        border-top: 1px solid black;
+       text-align: center;
+       padding: 10px 0px ;
+    }
+    button.navbar-toggle{
+        visibility: visible;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        width: 35px;
+        height: 20px;
+        border-radius: 5px;
+    }
+}
